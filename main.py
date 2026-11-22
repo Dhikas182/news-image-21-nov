@@ -4,7 +4,7 @@ news of Saturday 21 November 2026. Pure standard library (struct, zlib, os).
 Deterministic: no clock, no randomness, no network. Run twice, same bytes.
 
 Layout (winner pattern): big readable masthead date, one hero story, six
-headline cards, a 30-item world-in-brief grid, and a UTC timeline strip.
+headline cards, a 42-item world-in-brief grid, and a UTC timeline strip.
 The image carries the judging by itself: the AI judge sees only the PNG.
 """
 
@@ -491,8 +491,8 @@ def wrap_words(text, max_chars):
 
 # --- The day's news (verified 21 Nov 2026; see research-21-nov.md) --------
 HERO_KICKER = "MIDDLE EAST - US BASES IN BAHRAIN"
-HERO_LINES = ["IRAN STRIKES US BASES", "IN BAHRAIN, FIRE ERUPTS"]
-HERO_DECK = "IRGC CLAIMS HITS AT AL-RIFFA AND AWALI - NO CASUALTIES"
+HERO_LINES = ["IRAN STRIKES US BASES", "IN BAHRAIN"]
+HERO_DECK = "IRGC CLAIMS HITS AT AL-RIFFA AND AWALI - INDUSTRIAL FIRE, NO CASUALTIES"
 
 # (tag, headline, deck) — headline wraps to at most 2 lines at scale 3.
 CARDS = [
@@ -517,40 +517,54 @@ CARDS = [
 ]
 
 # (tag, one-line title) — every "TAG - TITLE" line was measured before
-# writing: left column <= 40 chars, right column <= 39 chars (scale 2,
-# 12 px/char); draw_text clips at the image edge so an over-long line
-# can never wrap into the next row.
+# writing: each line <= 25 chars (scale 2, 12 px/char = max 298 px)
+# so it fits the 305 px of text space in a 317 px column of the
+# 3-column grid (text starts 12 px in, after the red square);
+# draw_text clips at the image edge so an over-long line can never
+# wrap into the next row. Verified by script, not by hand-counting.
 BRIEF = [
-    ("NATO", "WE DEFEND EVERY INCH OF POLAND"),
-    ("UKRAINE", "TRUMP: EU SPENDS TOO MUCH"),
-    ("UN", "KILLER ROBOT RULES PUT OFF TO 2028"),
-    ("EU", "SMALLER BUDGET, 3% BIG TECH TAX"),
-    ("BALTIC", "SPARTA II BURNS AFTER DRONE HIT"),
-    ("YEMEN", "3 HOUTHI MISSILES AT RIYADH"),
-    ("GAZA", "STRIKE KILLS 3 IN FOOD VEHICLE"),
-    ("SPACE", "BEPICOLOMBO REACHES MERCURY"),
-    ("HEALTH", "WOLBACHIA CUTS DENGUE BY 69%"),
-    ("PERU", "M6.7 QUAKE SHAKES CENTRAL PERU"),
-    ("IRAQ", "BASRA FIRE KILLS 4, INJURES 35"),
-    ("NIGERIA", "BAYELSA BOAT TOLL RISES TO 24"),
-    ("INDIA", "MANIPUR LIQUOR TOLL RISES TO 13"),
-    ("RUSSIA", "WILDBERRIES CEO STEPS DOWN"),
-    ("UK", "MILIBAND: EU DEAL NOT TIED TO FEES"),
-    ("BRAZIL", "BOLSONARO IN INTENSIVE CARE"),
-    ("UKRAINE", "ZELENSKY CALLS PUTIN A KILLER"),
-    ("TIMOR", "M6.8 QUAKE OFF TIMOR, NO THREAT"),
-    ("AFGHAN", "MORTAR BLAST KILLS 4 STUDENTS"),
-    ("CONGO", "EBOLA KILLS 7 IN 10 UNDER-5S"),
-    ("OZ", "TEEN CHARGED OVER SIGNAL ARSON PLOT"),
-    ("PNG", "AIR NIUGINI DIVERTS, 146 SAFE"),
-    ("RUGBY", "WALLABIES EDGE WALES 29-26"),
-    ("RUGBY", "SCOTLAND THRASH JAPAN 67-5"),
-    ("RUGBY", "IRELAND EDGE SPRINGBOKS 20-17"),
-    ("U17", "TANZANIA DRAW 2-2 WITH COSTA RICA"),
-    ("ART", "WHITNEY OPENS INTERNET ART SHOW"),
-    ("SOMALIA", "OUR LAND NOT FOR FOREIGN WARS"),
-    ("FINLAND", "RUSSIAN HELICOPTER PROBED"),
-    ("MARKETS", "NIKKEI -5.06% IN AI SELL-OFF"),
+    ("NATO", "DEFEND EVERY INCH"),
+    ("UKRAINE", "EU SPENDS A LOT"),
+    ("UN", "ARMS RULES DELAYED"),
+    ("EU", "BUDGET CUT, TECH TAX"),
+    ("BALTIC", "SPARTA II BURNS"),
+    ("YEMEN", "RIYADH MISSILES"),
+    ("GAZA", "3 KILLED IN TRUCK"),
+    ("SPACE", "BEPICOLOMBO ORBIT"),
+    ("HEALTH", "DENGUE DOWN 69%"),
+    ("PERU", "M6.7 QUAKE, ANDES"),
+    ("IRAQ", "BASRA FIRE KILLS 4"),
+    ("NIGERIA", "BOAT TOLL 24"),
+    ("INDIA", "LIQUOR TOLL 13"),
+    ("RUSSIA", "RETAIL CEO QUITS"),
+    ("UK", "FEES NOT A BLOCK"),
+    ("BRAZIL", "BOLSONARO IN ICU"),
+    ("UKRAINE", "PUTIN A KILLER"),
+    ("TIMOR", "M6.8 QUAKE AT SEA"),
+    ("AFGHAN", "4 PUPILS KILLED"),
+    ("CONGO", "7 IN 10 KIDS DIE"),
+    ("OZ", "TEEN HELD FOR ARSON"),
+    ("PNG", "AIR NIUGINI DIVERTS"),
+    ("RUGBY", "WALLABIES WIN"),
+    ("RUGBY", "SCOTS ROUT JAPAN"),
+    ("RUGBY", "IRELAND EDGE BOKS"),
+    ("U17", "TANZANIA DRAW 2-2"),
+    ("ART", "WHITNEY ART SHOW"),
+    ("SOMALIA", "NO FOREIGN WARS"),
+    ("FINLAND", "COPTER PROBE"),
+    ("MARKETS", "NIKKEI -5.06%"),
+    ("F1", "VERSTAPPEN ON POLE"),
+    ("EPL", "LEEDS ROUT CHELSEA"),
+    ("EPL", "ARSENAL HELD 2-2"),
+    ("EPL", "CITY HELD BY FULHAM"),
+    ("FRANCE", "PROTESTS SHRINK"),
+    ("RUGBY", "FRANCE IN FINAL"),
+    ("BAHRAIN", "PEOPLE WARNED"),
+    ("CROATIA", "THOUSANDS RALLY"),
+    ("FRANCE", "STARS FACE PROBE"),
+    ("ESTONIA", "JETS SCRAMBLED"),
+    ("EPL", "BOURNEMOUTH 9TH WIN"),
+    ("JAPAN", "LEFT OUT IN CHINA"),
 ]
 
 # (utc label, line 1, line 2) — confirmed times only; each line <= 9 chars
@@ -579,7 +593,7 @@ def draw(px):
     draw_text_centered(px, 0, W, 52, "SATURDAY 21 NOVEMBER 2026", 5, RED)
     draw_text_centered(
         px, 0, W, 94,
-        "37 STORIES FROM EVERY CONTINENT - ALL REPORTED ON 21 NOVEMBER 2026",
+        "49 STORIES FROM EVERY CONTINENT - ALL REPORTED ON 21 NOVEMBER 2026",
         2, GREY)
     hline(px, 24, W - 24, 116, 3, INK)
 
@@ -608,13 +622,13 @@ def draw(px):
     # --- The world in brief ----------------------------------------------
     by = 524
     draw_text(px, 24, by, "THE WORLD IN BRIEF", 3, INK)
-    draw_text(px, W - 24 - text_width("30 STORIES", 2), by + 4, "30 STORIES", 2, RED)
+    draw_text(px, W - 24 - text_width("42 STORIES", 2), by + 4, "42 STORIES", 2, RED)
     hline(px, 24, W - 24, by + 26, 2, INK)
-    col_w = 482
+    col_w = 317
     pitch = 23
     for i, (tag, title) in enumerate(BRIEF):
-        col = i % 2
-        row = i // 2
+        col = i % 3
+        row = i // 3
         x = 24 + col * (col_w + gap)
         y = by + 34 + row * pitch
         fill_rect(px, x, y + 4, 5, 5, RED)

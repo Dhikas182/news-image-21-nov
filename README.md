@@ -25,7 +25,7 @@ Winner-style layout, learned from the 17 November winner
   sliding into correction (S&P -3.7%, Nasdaq -5.28%), COP31 running
   past its deadline over fossil fuels, and the EU–Indonesia trade deal
   signed after 10 years of talks.
-- **30 more stories in two columns** — 37 verified stories in total,
+- **42 more stories in three columns** — 49 verified stories in total,
   across every continent and many fields.
 - **UTC timeline strip** — the day's key moments from 00:09 to 21:00 UTC.
 
@@ -38,6 +38,18 @@ and the Shenzhen trilateral (19–20 Nov), the UK–EU deal signing
 (20 Nov), the Riemann hypothesis claim (20 Nov), and GTA VI's first-day
 sales (19–20 Nov). See `research-21-nov.md` for the full audit.
 
+Expanded 22 Nov 2026 from 37 to 49 stories: the 19 November entry
+(36 stories) missed the top 50 while winners carried 48+ stories, so
+12 more verified 21 November stories were added (F1 Las Vegas
+qualifying, three Premier League results, France protests and the
+Nations Championship final, Bahrain's warning, the Zagreb rally,
+the Depardieu/Houellebecq investigation, Estonia's drone alert,
+Bournemouth's record win, Japan sidelined at the China summit) and
+the brief grid went from two columns to three. Every brief line was
+measured in pixels against its 305 px column budget (script-checked,
+not hand-counted) after the 20 November entry lost 9 titles to
+overflow. The 37-story render is kept as `reference-37.png`.
+
 ## Program
 
 `main.py` (Python 3.13, standard library only) draws the image from
@@ -49,5 +61,5 @@ output.
 MAKEFUN_OUTPUT_DIR=out python3 main.py   # writes out/entry.png
 ```
 
-Output: PNG 1024×1024, 27,546 bytes, sha256
-`d5616b81b2db22f138e2ff497dc4e0f5327631ff3ec7bd6a7e8f2732975f4f82`.
+Output: PNG 1024×1024, 26,736 bytes, sha256
+`87fd164fc053e921cede35cc0cfcd10af47564b42e2a19be967eee585dc5918e`.

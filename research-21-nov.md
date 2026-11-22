@@ -6,7 +6,11 @@
 # Aturan tanggal: berita HARUS terjadi atau pertama kali dilaporkan pada
 # 21 Nov 2026 (waktu UTC). Berita 19/20 Nov yang hanya diulang di briefing
 # 21 Nov DITOLAK (lihat daftar penolakan di akhir).
-# Jumlah terverifikasi: 37 berita UNIK (1 hero + 6 kartu + 30 brief).
+# Jumlah terverifikasi: 49 berita UNIK (1 hero + 6 kartu + 42 brief).
+# Perluasan 22 Nov 2026: +12 berita baru (brief 31-42 di bawah),
+# setelah entry 19 Nov (36 berita) gagal masuk 50 besar — pola pemenang
+# 48+ berita. Grid brief diubah dari 2 kolom menjadi 3 kolom;
+# semua judul brief diukur dengan skrip terhadap budget 305 px/kolom.
 # Cakupan: Timur Tengah, Eropa, Amerika, Asia, Afrika, Oseania, ekonomi,
 # sains, kesehatan, olahraga, budaya.
 
@@ -330,3 +334,98 @@ Dari riset B:
 26. **Kematian Sharman Stone (mantan menteri Australia)** — meninggal minggu itu (bukan 21 Nov); tanggal pasti tidak terkonfirmasi sebagai 21 Nov, jadi tidak dipakai.
 
 Tidak ditolak: gempa Timor-Leste M6,8 (dilaporkan 21 Nov, Yonhap) — dipakai sebagai brief 18.
+
+---
+
+## TAMBAHAN 22 NOV 2026 — 12 BERITA BARU (brief 31-42, total 49)
+
+### 31. Kualifikasi F1 Las Vegas: Antonelli tercepat, Verstappen rebut pole
+- **Antonelli fastest in Las Vegas qualifying but Verstappen inherits pole**
+- Kimi Antonelli (Mercedes, juara dunia 2026) mencatat waktu tercepat kualifikasi GP Las Vegas 1:33,893, unggul 0,258 detik dari Max Verstappen, tetapi harus menjalani penalti turun 5 grid karena pergantian power unit sehingga start dari P6; Verstappen mewarisi pole, didampingi George Russell di baris depan, Norris dan Hadjar di baris kedua. Kedua Ferrari gagal lolos Q3.
+- Sumber: Formula1.com; FIA, 21 Nov 2026
+- https://www.formula1.com/en/latest/article/antonelli-quickest-in-las-vegas-gp-qualifying-as-verstappen-inherits-pole-position.6R7udh8iYMHunSOGI6zStK
+- https://www.fia.com/news/f1-antonelli-fastest-las-vegas-qualifying-verstappen-inherits-pole-position
+- CATATAN TANGGAL: kualifikasi digelar Jumat malam waktu Las Vegas (UTC-8) = Sabtu 21 Nov ~04:00 UTC; semua laporan bertanggal 21 Nov.
+
+### 32. Leeds bantai Chelsea 4-1 di Stamford Bridge
+- **Leeds thrash Chelsea 4-1 at Stamford Bridge**
+- Leeds United menang 4-1 atas Chelsea di Stamford Bridge: Noah Okafor mencetak dua gol, Dominic Calvert-Lewin dari penalti, Brenden Aaronson menutup di injury time; Emmanuel Emegha sempat membawa Chelsea unggul pada debut penuhnya. Kemenangan pertama Leeds di Stamford Bridge sejak 1999; Chelsea turun ke peringkat 8, kalah 4 dari 7 laga terakhir.
+- Sumber: Reuters / AFP via NAMPA, 21 Nov 2026; Sportsnet
+- https://www.nampa.org/text/23072254
+- https://www.sportsnet.ca/premier-league/article/manchester-citys-winless-run-hits-four-games-with-draw-against-fulham/
+
+### 33. Arsenal ditahan Newcastle 2-2
+- **Arsenal held 2-2 by Newcastle at St James' Park**
+- Pemimpin klasemen Arsenal gagal menjauh setelah ditahan 2-2 Newcastle: Eberechi Eze membawa Arsenal unggul menit 33, Harvey Barnes (49') dan Malick Thiaw (62') membalikkan keadaan, Noni Madueke menyamakan kedudukan menit 78. Arsenal tetap di puncak dengan keunggulan 6 poin.
+- Sumber: Reuters, 21 Nov 2026
+- https://news.nestia.com/detail_share/14232312?media_type=1
+- https://www.nampa.org/text/23072254
+
+### 34. Man City ditahan Fulham 1-1, tanpa kemenangan 4 laga
+- **Man City held 1-1 by Fulham; winless run hits four games**
+- Manchester City ditahan 1-1 Fulham di Etihad: Rodrigo Muniz membawa Fulham unggul menit 16, Elliot Anderson menyamakan lewat voli menit 58. City gagal mengalahkan Fulham untuk pertama kalinya dalam 21 pertemuan; laju tanpa kemenangan di liga menjadi 4 laga.
+- Sumber: Reuters / AP via Sportsnet, 21 Nov 2026
+- https://www.sportsnet.ca/premier-league/article/manchester-citys-winless-run-hits-four-games-with-draw-against-fulham/
+
+### 35. Demo biaya hidup Prancis sepi, 82.500 orang turun
+- **Lower turnout at largely peaceful marches across France**
+- Aksi protes biaya hidup dan hak mahasiswa di Prancis pada Sabtu diikuti 82.500 orang menurut Kemendagri (21.500 di Paris; penyelenggara mengklaim 150.000) — turun dibanding pekan sebelumnya, Sabtu keenam berturut-turut. 144 orang ditangkap; 70.000 personel keamanan dikerahkan. Aksi serupa juga di Portugal dan mahasiswa berdemo di Berlin.
+- Sumber: Reuters, 21 Nov 2026 17:03 UTC; One Turn / Al Jazeera
+- https://www.reuters.com/world/lower-turnout-largely-peaceful-marches-across-france-2026-11-21/
+
+### 36. Prancis ke final Nations Championship usai bantai Argentina 45-17
+- **France secure bonus-point win over Argentina to reach final**
+- Prancis mengalahkan Argentina 45-17 di Stade de France pada semifinal Nations Championship, Sabtu, dan melaju ke final pertama melawan juara dunia Afrika Selatan. Les Bleus memuncaki klasemen belahan utara dengan 26 poin, unggul satu poin atas Inggris.
+- Sumber: Reuters, 21 Nov 2026
+- https://www.reuters.com/sports/france-secure-bonus-point-win-over-argentina-reach-final-2026-11-21/
+
+### 37. Bahrain peringatkan warga soal ancaman saat konflik Iran berlanjut
+- **Bahrain warns residents of potential threat as Iran conflict persists**
+- Kementerian Dalam Negeri Bahrain memperingatkan warga pada Sabtu tentang potensi ancaman dan meminta mereka segera menuju tempat aman terdekat, di tengah konflik Iran yang terus berlanjut.
+- Sumber: Reuters, 21 Nov 2026
+- https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/
+
+### 38. Ribuan orang berdemo di Zagreb menuntut keadilan atas kematian di RS jiwa
+- **Croatians rally in Zagreb demanding justice over psychiatric hospital death**
+- Ribuan orang berkumpul di Ban Jelacic Square, Zagreb, Sabtu malam, memprotes kematian Kristian Josip Peris (32), mantan atlet dan pelatih, di rumah sakit jiwa pada 21 Oktober, menuntut pertanggungjawaban dan regulasi perawatan yang lebih baik. Sekitar 1.000 orang juga berdemo di Rijeka.
+- Sumber: Reuters, 21 Nov 2026
+- https://www.reuters.com/world/croatians-rally-zagreb-demanding-justice-over-psychiatric-hospital-death-2026-11-21/
+
+### 39. Depardieu dan Houellebecq diselidiki atas dugaan pelanggaran seksual
+- **French actor Depardieu and author Houellebecq under investigation for sexual assault**
+- Kejaksaan Paris membuka penyelidikan yudisial terhadap aktor Gérard Depardieu dan penulis Michel Houellebecq atas dugaan pelanggaran seksual, setelah ada pengaduan hukum yang diajukan.
+- Sumber: Reuters, 21 Nov 2026 13:30 UTC
+- https://www.reuters.com/world/french-actor-depardieu-author-houellebecq-under-investigation-sexual-assault-2026-11-21/
+
+### 40. Estonia waspada drone, jet NATO diterbangkan
+- **Estonia scrambles NATO allied aircraft over drone threat**
+- Angkatan Bersenjata Estonia mengeluarkan peringatan EE-ALARM pukul 04:42 waktu setempat (02:42 UTC) Sabtu pagi untuk kabupaten Ida-Viru dan Lääne-Viru atas kemungkinan ancaman drone; jet tempur NATO (Turki) diterbangkan. Peringatan dicabut 06:49 waktu setempat (04:49 UTC), tanpa pelanggaran wilayah udara. Sekitar 70-93 drone ditembak jatuh di wilayah Leningrad, Rusia, semalam; Finlandia memberlakukan kembali pembatasan udara dan laut sementara di Teluk Finlandia timur.
+- Sumber: ERR via Ukrainska Pravda; Militarnyi; Sweden Herald, 21 Nov 2026
+- https://www.byteseu.com/2535641/
+- https://swedenherald.com/article/finland-restricts-air-and-sea-traffic-as-estonia-warns-of-possible-drone-threat
+
+### 41. Bournemouth menang 2-0, rekor 9 kemenangan beruntun
+- **Bournemouth beat Nottingham Forest 2-0 for club-record ninth straight win**
+- Bournemouth menang 2-0 atas Nottingham Forest: Evanilson mencetak gol di laga liga keenam beruntun, Justin Kluivert menambah gol. Kemenangan kesembilan beruntun di semua kompetisi — rekor klub — dan Bournemouth naik ke peringkat 4.
+- Sumber: Reuters / AFP, 21 Nov 2026
+- https://www.nampa.org/text/23072254
+- https://news.nestia.com/detail_share/14232312?media_type=1
+
+### 42. Jepang merasa dikesampingkan dari KTT China
+- **Japan sidelined at China summit**
+- Trump mengatakan Jepang dan negara lain merasa sedikit dikesampingkan dari pembicaraan AS-China-Rusia; PM Jepang Sanae Takaichi menerima sambutan yang diperkecil di China. Para ahli menilai penolakan itu justru bisa membantunya di kalangan pemilih konservatif di dalam negeri.
+- Sumber: Japan Times / Asahi Shimbun via One Turn, 21 Nov 2026
+- https://oneturn.news/day/2026-11-21/
+
+---
+
+## TAMBAHAN DITOLAK (dicek 22 Nov 2026, tanggal salah / tidak dipakai)
+
+27. **Kematian anak karena campak di Virginia** — DITOLAK. Departemen Kesehatan Virginia mengumumkan Jumat sore 20 Nov 2026 (Reuters dateline 20 Nov); bukan berita 21 Nov.
+28. **Turki kuasai Sozcu TV** — DITOLAK. Penggerebekan polisi terjadi Selasa 17 Nov dini hari; putusan pengadilan (tahanan rumah dll.) Jumat 20 Nov.
+29. **Vonis Tundu Lissu (Tanzania)** — DITOLAK. Putusan Pengadilan Tinggi dijatuhkan 6 Nov 2026 (bebas tuduhan makar, bersalah hasutan, 4 tahun penjara).
+30. **Uganda batasi kerumunan karena Ebola** — DITOLAK. Diumumkan Kemenkes Uganda Kamis 19 Nov 2026.
+31. **Pertemuan Witkoff-Kushner dengan mediator Qatar di Berlin** — DITOLAK. Pertemuan Kamis 19 Nov, dilaporkan Axios Jumat 20 Nov.
+32. **Pertempuran di Machumbi, Walikale (Kongo timur)** — TIDAK DIPAKAI. Pertempuran Sabtu malam 21 Nov dilaporkan Actualité.cd, tetapi hanya bersandar pada sumber lokal tanpa nama dan belum terkonfirmasi independen; standar entri ini mensyaratkan verifikasi yang lebih kuat.
+
+Tidak ditolak: kualifikasi F1 Las Vegas (Jumat malam waktu setempat = Sabtu 21 Nov ~04:00 UTC) — dipakai sebagai brief 31 dengan catatan tanggal di atas.
